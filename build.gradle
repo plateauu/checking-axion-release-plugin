@@ -8,6 +8,7 @@ scmVersion {
         prefix = 'my-project-name'
         versionIncrementer 'incrementPatch'
     }
+    repository { pushTagsOnly = true }
     nextVersion.suffix = ''
     versionCreator 'versionWithBranch'
 }
