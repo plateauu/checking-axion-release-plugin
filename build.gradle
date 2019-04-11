@@ -6,12 +6,14 @@ plugins {
 scmVersion {
     tag {
         prefix = 'my-project-name'
+        versionIncrementer 'incrementPatch'
     }
+    nextVersion.suffix = ''
     versionCreator 'versionWithBranch'
 }
 
 group 'tech.plateauu'
-version '1.0-SNAPSHOT'
+version = scmVersion.version
 
 sourceCompatibility = 1.11
 
